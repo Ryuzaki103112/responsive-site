@@ -1,0 +1,183 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #E8D396;
+$subColor: #FFF000;
+$keyColor: #FF6791;
+$fontColor: #4c4c4c;
+
+
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:　1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+}
+
+box {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center
+{
+    text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.text-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', Verdana;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/* Header
+------------------------------------------------------------*/
+
+
+
+header {
+  .profile {
+    margin: 0 auto;
+    clear: both;
+  }
+}
+  .site-title {
+    font-size: 1.8rem;
+    line-height: normal;
+    span {
+      display: block;
+      font-size: 4.2rem;
+      color: $keyColor;
+    }
+  }
+
+//miko
+
+.topimage{
+     background-image: url("../images/IMG_0008.jpg");
+     height: 250px;
+     width: 100%;
+     background-size: cover;
+     background-position: center center;
+}
+
+@media (min-width: 769px) {
+    .topimage{
+     background-image: url("../images/IMG_0008.jpg");
+     height: 500px;
+     width: 100%;
+     background-size: cover;
+     background-position: center center;
+    }
+}
+
+// Common Styles
+section {
+  padding: 60px 0;
+  .container {
+    width: 90%;
+    @extend .text-center;
+  }
+  h2 {
+    @extend .abel;
+    font-size: 3.2rem;
+    @extend .uppercase;
+    color: $keyColor;
+  }
+}
+
+#topics {
+  background-color: $subColor;
+  .container {
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);    // テキストボックスを縦に並べる
+  }
+  
+  h2 {
+    color: $keyColor;
+    margin-bottom: 60px;
+  }
+}
+
+.box {
+    @include flex(1);
+    margin: 10px 0;                     // 上下にマージン
+    padding: 20px;
+    background-color: $keyColor;
+    margin: 10px;
+    flex: 1;
+  }
+
+h3 {
+    @extend .abel;
+    @extend .uppercase;
+    color: $fontColor;
+    margin-bottom:10px;
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+  
+@media (min-width: 769px) {
+
+#topics {
+    .container {
+      @include flex-direction(row);     // スキルボックスを横に並べる
+      justify-content: space-between;
+    }
+    .box {
+      margin: 0 10px;                   // 左右にマージン
+    }
+  }
+}
+
+
+#miko_images {
+  width: 80%;
+  margin: 0 auto;
+   a {
+      display: block;
+      position: relative;
+
+      .iyashi {
+        position: absolute;
+        height: 150%;
+        width: 80%;
+
+        .button-readmore {
+          text-align: center;
+          width: 125%;
+          display: block;
+          color: #FFF;
+          background-color: $keyColor;
+          @include border-radius(7px);
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+}
+}
+
+  

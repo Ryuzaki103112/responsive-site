@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 　1 0.6;
+  letter-spacing: 0.1em;
+  background-color: #E8D396; }
+
+box {
+  color: #FF6791;
+  text-decoration: none; }
+  box:visited {
+    color: #ff346c; }
+  box:hover {
+    color: #ff346c; }
+  box:active {
+    color: #ff81a3; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center, section .container {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.text-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, h3 {
+  font-family: 'Abel', Verdana; }
+
+.uppercase, section h2, h3 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+header .profile {
+  margin: 0 auto;
+  clear: both; }
+
+.site-title {
+  font-size: 1.8rem;
+  line-height: normal; }
+  .site-title span {
+    display: block;
+    font-size: 4.2rem;
+    color: #FF6791; }
+
+.topimage {
+  background-image: url("../images/IMG_0008.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+@media (min-width: 769px) {
+  .topimage {
+    background-image: url("../images/IMG_0008.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem;
+    color: #FF6791; }
+
+#topics {
+  background-color: #FFF000; }
+  #topics .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #topics h2 {
+    color: #FF6791;
+    margin-bottom: 60px; }
+
+.box {
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #FF6791;
+  margin: 10px;
+  flex: 1; }
+
+h3 {
+  color: #4c4c4c;
+  margin-bottom: 10px;
+  font-size: 2.1rem;
+  font-weight: bold; }
+
+@media (min-width: 769px) {
+  #topics .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #topics .box {
+    margin: 0 10px; } }
+#miko_images {
+  width: 80%;
+  margin: 0 auto; }
+  #miko_images a {
+    display: block;
+    position: relative; }
+    #miko_images a .iyashi {
+      position: absolute;
+      height: 150%;
+      width: 80%; }
+      #miko_images a .iyashi .button-readmore {
+        text-align: center;
+        width: 125%;
+        display: block;
+        color: #FFF;
+        background-color: #FF6791;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+        font-size: 2rem;
+        text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
