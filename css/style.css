@@ -66,11 +66,7 @@ header .profile {
 
 @media (min-width: 769px) {
   .topimage {
-    background-image: url("../images/IMG_0008.jpg");
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center center; } }
+    height: 500px; } }
 section {
   padding: 60px 0; }
   section .container {
@@ -113,26 +109,17 @@ h3 {
     justify-content: space-between; }
   #topics .box {
     margin: 0 10px; } }
-#miko_images {
+#miko_images a {
   width: 80%;
-  margin: 0 auto; }
-  #miko_images a {
-    display: block;
-    position: relative; }
-    #miko_images a .iyashi {
-      position: absolute;
-      height: 150%;
-      width: 80%; }
-      #miko_images a .iyashi .button-readmore {
-        text-align: center;
-        width: 125%;
-        display: block;
-        color: #FFF;
-        background-color: #FF6791;
-        -moz-border-radius: 7px;
-        -webkit-border-radius: 7px;
-        border-radius: 7px;
-        font-size: 2rem;
-        text-align: center; }
+  height: 150%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  color: #FFF;
+  background-color: #FF6791;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-size: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
